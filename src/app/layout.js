@@ -17,7 +17,7 @@ export default function Home() {
       <body className="bg-[#1E293B] text-white">
       <div className="bg-[#1E293B] text-white min-h-screen">
       {/* Header */}
-      <header className="flex justify-between items-center p-6">
+      <header className="flex justify-between items-center p-12">
         <a id="site-title" href="/" data-animation-role="header-element">
           <img src="/images/pionera_logo_branco.png" width="50px" alt="" style={{width: 300, height: 100}}/>
         </a>
@@ -49,7 +49,7 @@ export default function Home() {
       </main>
       
       {/* Services Section */}
-      <section className="diagonal-divider bg-gray-100 text-gray-900 p-12"  style={{paddingBottom: '200px'}}>
+      <section className=" bg-gray-100 text-gray-900 p-12"  style={{paddingBottom: '200px'}}>
         <h2 className="text-5xl font-bold mb-12 flex justify-center ...">Nossos serviços</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[1, 2, 3].map((service) => (
@@ -61,8 +61,7 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="bg-[#1E293B] text-white p-12">
+      <section className="bg-[#1E293B] text-white p-12 vertical-divider">
         <h2 className="text-5xl font-bold">Mais sobre nossa marca</h2>
         <p className="mt-9 text-gray-300 text-2xl">Na nossa agência, nos especializamos em estratégias de gestão de marcas que impulsionam o reconhecimento e a fidelidade junto ao seu público-alvo. Com uma abordagem inovadora e personalizada, asseguramos que sua marca se destaque no mercado competitivo. <a href="#" class="underline">Saiba mais</a></p>
     </section>
