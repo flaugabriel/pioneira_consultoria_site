@@ -1,0 +1,30 @@
+			#rec896654668 .t420__title {
+				color: #525252;
+			}
+
+			#rec896654668 .t420__descr {
+				color: #ffffff;
+			}
+			#rec896654668 .t420__logo-link {
+				color: #ffffff;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+
+			@media screen and (min-width:900px) {
+				#rec896654668 .t420__logo-link {
+					font-size: 56px;
+				}
+			}
+
+			#rec896654668 .t420__logo {
+				color: #ffffff;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+
+			@media screen and (min-width:900px) {
+				#rec896654668 .t420__logo {
+					font-size: 56px;
+				}
+			}

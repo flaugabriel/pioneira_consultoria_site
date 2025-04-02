@@ -1,0 +1,17 @@
+#rec896654656 .t-card__title {
+  font-weight: 500;
+}
+
+@media screen and (min-width:900px) {
+  #rec896654656 .t-card__title {
+    font-size: 36px;
+  }
+}
+
+#rec896654656 .t-card__descr {
+  font-size: 20px;
+}
+
+#rec896654656 .t843__blockimg {
+  border-radius: 50px;
+}

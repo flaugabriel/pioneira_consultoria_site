@@ -1,0 +1,275 @@
+#rec896654665 .t396__artboard {
+    height: 640px;
+    background-color: #a8cf45;
+}
+
+#rec896654665 .t396__filter {
+    height: 640px;
+}
+
+#rec896654665 .t396__carrier {
+    height: 640px;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1199px) {
+
+    #rec896654665.t396__artboard,
+    #rec896654665.t396__filter,
+    #rec896654665.t396__carrier {
+        height: 530px;
+    }
+
+    #rec896654665 .t396__filter {}
+
+    #rec896654665 .t396__carrier {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:959px) {
+
+    #rec896654665.t396__artboard,
+    #rec896654665.t396__filter,
+    #rec896654665.t396__carrier {
+        height: 450px;
+    }
+
+    #rec896654665 .t396__filter {}
+
+    #rec896654665 .t396__carrier {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:639px) {
+
+    #rec896654665.t396__artboard,
+    #rec896654665.t396__filter,
+    #rec896654665.t396__carrier {
+        height: 620px;
+    }
+
+    #rec896654665 .t396__filter {}
+
+    #rec896654665 .t396__carrier {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:479px) {
+
+    #rec896654665.t396__artboard,
+    #rec896654665.t396__filter,
+    #rec896654665.t396__carrier {
+        height: 610px;
+    }
+
+    #rec896654665 .t396__filter {}
+
+    #rec896654665 .t396__carrier {
+        background-attachment: scroll;
+    }
+}
+
+#rec896654665 .tn-elem[data-elem-id="1536161772606"] {
+    color: #000000;
+    text-align: center;
+    z-index: 3;
+    top: calc(320px - 29px + -205px);
+    left: calc(50% - 275px + -234px);
+    width: 550px;
+    height: auto;
+}
+
+#rec896654665 .tn-elem[data-elem-id="1536161772606"] .tn-atom {
+    vertical-align: middle;
+    color: #000000;
+    font-size: 46px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.25;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+@media screen and (max-width:1199px) {
+    #rec896654665.tn-elem[data-elem-id="1536161772606"] {
+        top: calc(320px - 29px + -88px);
+        left: calc(50% - 275px + 0px);
+        width: 460px;
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161772606"] .tn-atom {
+        white-space: normal;
+        font-size: 39px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:959px) {
+    #rec896654665.tn-elem[data-elem-id="1536161772606"] {
+        top: calc(320px - 29px + -71px);
+        left: calc(50% - 275px + -138px);
+        width: 340px;
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161772606"] {
+        text-align: left;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161772606"] .tn-atom {
+        white-space: normal;
+        font-size: 36px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:639px) {
+    #rec896654665.tn-elem[data-elem-id="1536161772606"] {
+        top: calc(320px - 29px + 40px);
+        left: calc(50% - 275px + 1px);
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161772606"] {
+        text-align: center;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161772606"] .tn-atom {
+        white-space: normal;
+        font-size: 34px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:479px) {
+    #rec896654665.tn-elem[data-elem-id="1536161772606"] {
+        top: calc(320px - 29px + 30px);
+        left: calc(50% - 275px + 1px);
+        width: 300px;
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161772606"] .tn-atom {
+        white-space: normal;
+        font-size: 29px;
+        line-height: 1.25;
+        background-size: cover;
+    }
+}
+
+#rec896654665 .tn-elem[data-elem-id="1536161805326"] {
+    color: #000000;
+    text-align: center;
+    z-index: 4;
+    top: 208px;
+    left: calc(50% - 310px + -230px);
+    width: 620px;
+    height: auto;
+}
+
+#rec896654665 .tn-elem[data-elem-id="1536161805326"] .tn-atom {
+    vertical-align: middle;
+    color: #000000;
+    font-size: 27px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0.45;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+@media screen and (max-width:1199px) {
+    #rec896654665.tn-elem[data-elem-id="1536161805326"] {
+        top: 243px;
+        left: calc(50% - 310px + 0px);
+        width: 460px;
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161805326"] .tn-atom {
+        white-space: normal;
+        font-size: 20px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:959px) {
+    #rec896654665.tn-elem[data-elem-id="1536161805326"] {
+        top: 215px;
+        left: calc(50% - 310px + -134px);
+        width: 350px;
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161805326"] {
+        text-align: left;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161805326"] .tn-atom {
+        white-space: normal;
+        font-size: 16px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:639px) {
+    #rec896654665.tn-elem[data-elem-id="1536161805326"] {
+        top: 409px;
+        left: calc(50% - 310px + 1px);
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161805326"] {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:479px) {
+    #rec896654665.tn-elem[data-elem-id="1536161805326"] {
+        top: 386px;
+        left: calc(50% - 310px + 1px);
+        width: 230px;
+        height: auto;
+    }
+
+    #rec896654665 .tn-elem[data-elem-id="1536161805326"] .tn-atom {
+        white-space: normal;
+        font-size: 15px;
+        line-height: 1.45;
+        background-size: cover;
+    }
+}
+
+#rec896654665 .tn-elem[data-elem-id="1742021543762"] {
+    z-index: 5;
+    top: 142px;
+    left: calc(50% - 600px + 720px);
+    width: 463px;
+    height: 266px;
+}
+
+#rec896654665 .tn-elem[data-elem-id="1742021543762"] .tn-atom {
+    border-radius: 0px 0px 0px 0px;
+    overflow: hidden;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:959px) {}
+
+@media screen and (max-width:639px) {}
+
+@media screen and (max-width:479px) {}

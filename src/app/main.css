@@ -1,0 +1,15 @@
+.diagonal-divider {
+    position: relative;
+    background-color: #1E293B;
+}
+
+.diagonal-divider::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #f3f4f6;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
