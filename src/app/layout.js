@@ -13,6 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Gestão de Marcas</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
       </head>
       <body className="bg-[#1E293B] text-white">
       <div className="bg-[#1E293B] text-white min-h-screen">
@@ -48,22 +49,58 @@ export default function Home() {
         </div>
       </main>
       
-      {/* Services Section */}
-      <section className=" bg-gray-100 text-gray-900 p-12"  style={{paddingBottom: '200px'}}>
-        <h2 className="text-5xl font-bold mb-12 flex justify-center ...">Nossos serviços</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((service) => (
-            <div key={service} className="bg-white p-4 rounded-lg shadow-lg">
-              <h3 className="font-semibold mt-4 text-2xl">Gestão Estratégica de Marcas</h3>
-              <p className="text-sm text-gray-700 mb-2">Oferecemos soluções integradas para construir uma identidade de marca forte e consistente, garantindo sua relevância no mercado. Nossa abordagem estratégica une análise de dados e insights criativos para maximizar o impacto e a longevidade de sua marca.</p>
+      <section className="bg-[#f3f4f6] text-gray-900 p-12 text-center">
+        <h2 className="text-3xl font-bold mb-6">Nossos Serviços</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 border rounded-lg shadow">
+                <i className="ph ph-buildings text-6xl text-blue-500 mb-4"></i>
+                <h3 className="text-xl font-semibold mb-2">Serviços Societários</h3>
+                <p>Constituição, alterações e encerramento de empresas com segurança jurídica e agilidade.</p>
             </div>
-          ))}
+            <div className="p-6 border rounded-lg shadow">
+                <i className="ph ph-trademark text-6xl text-green-500 mb-4"></i>
+                <h3 className="text-xl font-semibold mb-2">Registro de Marcas</h3>
+                <p>Proteja a identidade da sua empresa com o registro oficial no INPI.</p>
+            </div>
+            <div className="p-6 border rounded-lg shadow">
+                <i className="ph ph-shield-check text-6xl text-red-500 mb-4"></i>
+                <h3 className="text-xl font-semibold mb-2">Consultoria em Compliance</h3>
+                <p>Orientação estratégica para manter sua empresa regular e em conformidade com a legislação.</p>
+            </div>
         </div>
-      </section>
+    </section>
+
+      <section class="bg-gray-900 text-white p-12 text-center">
+        <h2 class="text-3xl font-bold mb-6">Os números da Pioneira</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-lg font-semibold">
+            <div>
+                <p class="text-4xl">+ de 25</p>
+                <p>Funcionários</p>
+            </div>
+            <div>
+                <p class="text-4xl">+ de 900</p>
+                <p>Empresas Abertas</p>
+            </div>
+            <div>
+                <p class="text-4xl">+ de 400</p>
+                <p>Migrações Realizadas</p>
+            </div>
+            <div>
+                <p class="text-4xl">+ de 25</p>
+                <p>Anos de Experiência</p>
+            </div>
+        </div>
+    </section>
 
       <section className="bg-[#1E293B] text-white p-12 vertical-divider">
         <h2 className="text-5xl font-bold">Mais sobre nossa marca</h2>
         <p className="mt-9 text-gray-300 text-2xl">Na nossa agência, nos especializamos em estratégias de gestão de marcas que impulsionam o reconhecimento e a fidelidade junto ao seu público-alvo. Com uma abordagem inovadora e personalizada, asseguramos que sua marca se destaque no mercado competitivo. <a href="#" class="underline">Saiba mais</a></p>
+    </section>
+
+    <section class="bg-white text-gray-900 p-12 text-center">
+        <h2 class="text-3xl font-bold mb-4">Fale Conosco</h2>
+        <p class="mb-6">Entre em contato com nossos especialistas via WhatsApp para saber mais sobre como podemos ajudar sua empresa:</p>
+        <a href="https://wa.me/556992154725?text=Ol%C3%A1%20vim%20do%20site%20da%20Pioneira,%20gostaria%20de%20conversar" target="_blank" class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600">Fale conosco no WhatsApp</a>
     </section>
       
       {/* Footer */}
