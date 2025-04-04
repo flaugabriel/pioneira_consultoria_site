@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <html lang="pt-BR">
       <head>
-        <meta charset="UTF-8"/>
+        <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Gestão de Marcas</title>
         <script src="https://cdn.tailwindcss.com"></script>
@@ -24,9 +24,8 @@ export default function Home() {
         </a>
         <nav>
           <ul className="flex space-x-6">
-            <li><a href="#" className="hover:underline">Serviços</a></li>
-            <li><a href="#" className="hover:underline">Quem somos</a></li>
-            <li><a href="#" className="hover:underline">Contato</a></li>
+            <li><a href="#services" className="hover:underline">Serviços</a></li>
+            <li><a href="#contact" className="hover:underline">Contato</a></li>
           </ul>
         </nav>
       </header>
@@ -38,7 +37,7 @@ export default function Home() {
           <p className="text-gray-300 text-2xl ">
           A Pioneira Regularização Empresarial Ltda. é especializada em terceirização de serviços societários, registro de marcas e consultoria completa para que empresas se mantenham regulares, competitivas e protegidas.
           </p>
-          <div class="flex justify-center ...">
+          <div className="flex justify-center ...">
           <button onClick={() => setIsModalOpen(true)} className="animate-bounce bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg">
             SAIBA MAIS
           </button>
@@ -49,7 +48,7 @@ export default function Home() {
         </div>
       </main>
       
-      <section className="bg-[#c1c4c6] text-gray-900 p-12 text-center" style={{paddingBottom: '150px'}}>
+      <section className="bg-[#c1c4c6] text-gray-900 p-12 text-center" style={{paddingBottom: '150px'}} id='services'>
         <h2 className="text-6xl font-bold mb-12">Principais serviços</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 border rounded-lg shadow bg-white">
@@ -70,23 +69,23 @@ export default function Home() {
         </div>
     </section>
 
-    <section class="bg-[#272727] text-white p-12 text-center angled-top-divider" style={{paddingBottom: '150px', paddingTopj: '150px'}}>
-        <h2 class="text-3xl font-bold mb-6">Os números da Pioneira</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-lg font-semibold">
+    <section className="bg-[#272727] text-white p-12 text-center angled-top-divider" style={{paddingBottom: '150px', paddingTopj: '150px'}}>
+        <h2 className="text-3xl font-bold mb-6">Os números da Pioneira</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-lg font-semibold">
             <div>
-                <p class="text-4xl">+ de 25</p>
+                <p className="text-4xl">+ de 25</p>
                 <p>Funcionários</p>
             </div>
             <div>
-                <p class="text-4xl">+ de 900</p>
+                <p className="text-4xl">+ de 900</p>
                 <p>Empresas Abertas</p>
             </div>
             <div>
-                <p class="text-4xl">+ de 400</p>
+                <p className="text-4xl">+ de 400</p>
                 <p>Migrações Realizadas</p>
             </div>
             <div>
-                <p class="text-4xl">+ de 10</p>
+                <p className="text-4xl">+ de 10</p>
                 <p>Anos de Experiência</p>
             </div>
         </div>
@@ -97,32 +96,32 @@ export default function Home() {
         <p className="mt-9 text-gray-300 text-2xl">Nosso compromisso com a qualidade e a eficiência se reflete na construção de relações de confiança com nossos clientes, que buscam não apenas o cumprimento das obrigações legais, mas também o fortalecimento de suas marcas e a maximização de suas oportunidades de negócios. </p>
     </section>
 
-    <section class="bg-[#1E293B] text-gray-900 p-12 text-center" >
-        <h2 class="text-3xl font-bold mb-4 text-white">Fale Conosco</h2>
-        <p class="mb-6 text-white">Entre em contato com nossos especialistas via WhatsApp para saber mais sobre como podemos ajudar sua empresa:</p>
+    <section className="bg-[#1E293B] text-gray-900 p-12 text-center" id='contact'>
+        <h2 className="text-3xl font-bold mb-4 text-white">Fale Conosco</h2>
+        <p className="mb-6 text-white">Entre em contato com nossos especialistas via WhatsApp para saber mais sobre como podemos ajudar sua empresa:</p>
         <a href="https://wa.me/556992154725?text=Ol%C3%A1%20vim%20do%20site%20da%20Pioneira,%20gostaria%20de%20conversar" target="_blank" class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600">Fale conosco no WhatsApp</a>
     </section>
       
       {/* Footer */}
-      <footer class="bg-white justify-between text-black p-8 text-center">
-        <div class="grid grid-cols-6 gap-4">
-          <div class="col-start-1 col-end-3 ...">
+      <footer className="bg-white justify-between text-black p-8 text-center">
+        <div className="grid grid-cols-6 gap-4">
+          <div className="col-start-1 col-end-3 ...">
             <div className="flex justify-center space-x-3 mt-4">
             <a id="site-title" href="/" data-animation-role="header-element">
               <img src="/images/pionera_logo_preta.png" width="50px" alt="" style={{width: '200px', height: '100px'}}/>
             </a>
             </div>
           </div>
-          <div class="col-span-2 col-end-7 ...">
-            <p class="text-lg mt-2">R João Pedro da Rocha, 1051, Nova Porto Velho, Pôrto Velho 76.820-128</p>
+          <div className="col-span-2 col-end-7 ...">
+            <p className="text-lg mt-2">R João Pedro da Rocha, 1051, Nova Porto Velho, Pôrto Velho 76.820-128</p>
           </div>
-          <div class="col-start-1 col-end-7 ...">
-            <p class="text-lg font-semibold">Pioneira Regularização Empresarial</p>
+          <div className="col-start-1 col-end-7 ...">
+            <p className="text-lg font-semibold">Pioneira Regularização Empresarial</p>
             <p>
                 <a href="https://www.instagram.com/pioneiraregularizacao" className="hover:text-white" target='_Blank'><i className="ph ph-instagram-logo text-4xl text-black"></i></a>
               </p>
               <hr/>
-            <p class="text-sm mt-1">&copy; 2025 Todos os direitos reservados.</p>
+            <p className="text-sm mt-1">&copy; 2025 Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
