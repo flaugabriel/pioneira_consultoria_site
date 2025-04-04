@@ -104,12 +104,26 @@ export default function Home() {
     </section>
       
       {/* Footer */}
-      <footer class="bg-[#272727] text-gray-300 p-8 text-center" style={{clipPath: 'polygon(30% 0%, 70% 0%, 70% 100%, 30% 100%)'}}>
-        <p class="text-lg font-semibold">Pioneira Regularização Empresarial</p>
-        <p class="text-sm mt-2">R João Pedro da Rocha, 1051, Nova Porto Velho, Pôrto Velho 76.820-128</p>
-        <p class="text-sm mt-1">&copy; 2025 Todos os direitos reservados.</p>
-        <div className="flex justify-center space-x-6 mt-4">
-          <a href="https://www.instagram.com/pioneiraregularizacao" className="hover:text-white" target='_Blank'>Instagram</a>
+      <footer class="bg-white justify-between text-black p-8 text-center">
+        <div class="grid grid-cols-6 gap-4">
+          <div class="col-start-1 col-end-3 ...">
+            <div className="flex justify-center space-x-3 mt-4">
+            <a id="site-title" href="/" data-animation-role="header-element">
+              <img src="/images/pionera_logo_preta.png" width="50px" alt="" style={{width: '200px', height: '100px'}}/>
+            </a>
+            </div>
+          </div>
+          <div class="col-span-2 col-end-7 ...">
+            <p class="text-lg mt-2">R João Pedro da Rocha, 1051, Nova Porto Velho, Pôrto Velho 76.820-128</p>
+          </div>
+          <div class="col-start-1 col-end-7 ...">
+            <p class="text-lg font-semibold">Pioneira Regularização Empresarial</p>
+            <p>
+                <a href="https://www.instagram.com/pioneiraregularizacao" className="hover:text-white" target='_Blank'><i className="ph ph-instagram-logo text-4xl text-black"></i></a>
+              </p>
+              <hr/>
+            <p class="text-sm mt-1">&copy; 2025 Todos os direitos reservados.</p>
+          </div>
         </div>
       </footer>
       
