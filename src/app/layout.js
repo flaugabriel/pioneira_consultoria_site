@@ -7,11 +7,26 @@ import { useState } from "react";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <html lang="pt-BR">
       <head>
+        <link  rel="icon" href="/images/pionera_logo_branco.png" type="image/png"/>
         <meta charSet="UTF-8"/>
+        <meta name="description" content="Pioneira Regularização Empresarial - Consultoria em Regularização Empresarial, Registro de Marcas e Compliance."/>
+        <meta name="keywords" content="Pioneira, Regularização Empresarial, Consultoria, Registro de Marcas, Compliance"/>
+        <meta name="author" content="Pioneira Regularização Empresarial"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="theme-color" content="#1E293B"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-title" content="Pioneira Regularização Empresarial"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Gestão de Marcas</title>
         <script src="https://cdn.tailwindcss.com"></script>
@@ -20,27 +35,32 @@ export default function Home() {
       <body className="bg-[#1E293B] text-white">
       <div className="bg-[#1E293B] text-white min-h-screen">
       
-      <header className="flex flex-wrap justify-between items-center p-6">
-        <button id="menu-toggle" className="md:hidden text-white text-2xl">
-            ☰
-        </button>
-        <a id="site-title" href="/" data-animation-role="header-element">
-          <img src="/images/pionera_logo_branco.png" width="50px" alt="" style={{width: 300, height: 100}}/>
-        </a>
-        <nav className="w-full md:w-auto hidden md:flex md:items-center mt-4 md:mt-0" id="mobile-menu">
-          <ul className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
-            <li><a href="#services" className="hover:underline">Serviços</a></li>
-            <li><a href="#contact" className="hover:underline">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
+     <header className="flex flex-wrap justify-between items-center p-6 bg-gray-800">
+      {/* Botão de menu mobile */}
+      <button onClick={toggleMenu} className="md:hidden text-white text-2xl">
+        ☰
+      </button>
+
+      {/* Logo */}
+      <a href="/" className="text-white">
+        <img src="/images/pionera_logo_branco.png" alt="Logo" style={{ width: 300, height: 100 }} />
+      </a>
+
+      {/* Menu de navegação */}
+      <nav className={`${menuOpen ? 'block' : 'hidden'} w-full md:w-auto md:flex md:items-center mt-4 md:mt-0`}>
+        <ul className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+          <li><a href="#services" className="hover:underline text-white">Serviços</a></li>
+          <li><a href="#contact" className="hover:underline text-white">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
       
       {/* Main Section */}
       <main className="diagonal-divider flex flex-col md:flex-row items-center p-12" style={{paddingBottom: '200px'}}>
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-6xl font-bold">Consultoria em Regularização Empresarial</h2>
           <p className="text-gray-300 text-2xl ">
-          A Pioneira Regularização Empresarial Ltda. é especializada em terceirização de serviços societários, registro de marcas e consultoria completa para que empresas se mantenham regulares, competitivas e protegidas.
+          Somos uma empresa especializada em terceirização de serviços societários e registros de marcas, além de possuir consultoria completa para que sua empresa se mantenha regular e competitiva no mercado.
           </p>
           <div className="flex justify-center ...">
           <button onClick={() => setIsModalOpen(true)} className="animate-bounce bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg">
@@ -53,25 +73,45 @@ export default function Home() {
         </div>
       </main>
       
-      <section className="bg-[#c1c4c6] text-gray-900 p-12 text-center" style={{paddingBottom: '150px'}} id='services'>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 border rounded-lg shadow bg-[#f3f0ed]">
-                <img src="/images/societario.png" className='mask-radial-at-center mask-radial-from-100%'/>
-                <h3 className="text-3xl font-semibold mb-2">Terceirização de Serviços Societários</h3>
-                <p className='text-2xl'>Acompanhamento completo de todas as formalidades societárias, garantindo que sua empresa esteja em conformidade com a legislação vigente, desde a constituição até a dissolução da sociedade.</p>
-            </div>
-            <div className="p-6 border rounded-lg shadow bg-[#f3f0ed]">
-                <img src="/images/marcas.png" className='mask-radial-at-center mask-radial-from-100%'/>
-                <h3 className="text-3xl font-semibold mb-2">Registro de Marcas</h3>
-                <p className='text-2xl'>Assessoria especializada no processo de registro de marcas e proteção intelectual, assegurando que sua identidade empresarial seja legalmente resguardada e bem posicionada no mercado.</p>
-            </div>
-            <div className="p-6 border rounded-lg shadow bg-[#f3f0ed]">
-                <img src="/images/consultoria.png" className='rounded-full mask-radial-at-center mask-radial-from-100%'/>
-                <h3 className="text-3xl font-semibold mb-2">Consultoria em Compliance</h3>
-                <p className='text-2xl'>Orientação estratégica para manter sua empresa regular e em conformidade com a legislação.</p>
-            </div>
-        </div>
-    </section>
+      <section className="bg-[#c1c4c6] text-gray-900 p-12 text-center" style={{ paddingBottom: '150px' }} id="services">
+  <div className="flex flex-col gap-16">
+    
+    {/* Serviço 1 */}
+    <div className="flex flex-col md:flex-row items-center gap-8 bg-[#f3f0ed] p-6 rounded-lg shadow">
+      <img src="/images/societario.png" className="w-32 h-32 object-cover rounded-full" alt="Terceirização de Serviços Societários" />
+      <div className="text-left">
+        <h3 className="text-3xl font-semibold mb-2">Terceirização de Serviços Societários</h3>
+        <p className="text-2xl">
+          Acompanhamento completo de todas as formalidades societárias, garantindo que sua empresa esteja em conformidade com a legislação vigente, desde a constituição até a dissolução da sociedade.
+        </p>
+      </div>
+    </div>
+
+    {/* Serviço 2 */}
+    <div className="flex flex-col md:flex-row items-center gap-8 bg-[#f3f0ed] p-6 rounded-lg shadow">
+      <img src="/images/marcas.png" className="w-32 h-32 object-cover rounded-full" alt="Registro de Marcas" />
+      <div className="text-left">
+        <h3 className="text-3xl font-semibold mb-2">Registro de Marcas</h3>
+        <p className="text-2xl">
+          Assessoria especializada no processo de registro de marcas e proteção intelectual, assegurando que sua identidade empresarial seja legalmente resguardada e bem posicionada no mercado.
+        </p>
+      </div>
+    </div>
+
+    {/* Serviço 3 */}
+    <div className="flex flex-col md:flex-row items-center gap-8 bg-[#f3f0ed] p-6 rounded-lg shadow">
+      <img src="/images/consultoria.png" className="w-32 h-32 object-cover rounded-full" alt="Consultoria em Compliance" />
+      <div className="text-left">
+        <h3 className="text-3xl font-semibold mb-2">Consultoria em Compliance</h3>
+        <p className="text-2xl">
+          Orientação estratégica para manter sua empresa regular e em conformidade com a legislação.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <section className="bg-[#272727] text-white p-12 text-center angled-top-divider" style={{paddingBottom: '150px', paddingTopj: '150px'}}>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-lg font-semibold">
@@ -88,7 +128,7 @@ export default function Home() {
                 <p>Migrações Realizadas</p>
             </div>
             <div>
-                <p className="text-4xl">+ de 10</p>
+                <p className="text-4xl">+ 1</p>
                 <p>Anos de Experiência</p>
             </div>
         </div>
