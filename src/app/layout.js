@@ -120,7 +120,7 @@ export default function Home() {
                 <p>Funcionários</p>
             </div>
             <div>
-                <p className="text-4xl">+ de 50</p>
+                <p className="text-4xl">+ de 1000</p>
                 <p>Empresas Abertas</p>
             </div>
             <div>
